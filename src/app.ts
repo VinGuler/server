@@ -20,6 +20,7 @@ app.use(
   })
 )
 
+// Initialize AI model
 initAiModel()
 
 // Routes
