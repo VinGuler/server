@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "main": "dist/app.js",
   "scripts": {
+    "init": "npm install && npm run build",
     "build": "tsc",
-    "start": "node dist/app.js --env-file=.env",
-    "dev": "ts-node src/app.ts --env-file=.env"
+    "start": "node dist/app.js",
+    "dev": "ts-node src/app.ts"
   },
   "dependencies": {
     "dotenv": "^16.5.0",
