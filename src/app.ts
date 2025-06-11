@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 3000
 app.use(express.json())
 app.use(
   cors({
-    origin: 'https://vinguler.com',
+    origin: /vinguler\.com$/,
     methods: ['GET'],
     credentials: false
   })
