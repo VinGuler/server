@@ -3,6 +3,7 @@ import dotenv from 'dotenv'
 import cors from 'cors'
 
 import myInfoRouter from './routes/myInfo'
+import { initAiModel } from './services/ai'
 
 dotenv.config()
 
@@ -18,6 +19,8 @@ app.use(
     credentials: false
   })
 )
+
+initAiModel()
 
 // Routes
 app.use('/', myInfoRouter)
